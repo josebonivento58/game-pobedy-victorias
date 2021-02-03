@@ -1,6 +1,6 @@
 void loadGraphics(){
  if(window==0){
-  menu(); 
+  loadMenu(); 
  }else if(window==1){
    loadGamePlay();
  }
