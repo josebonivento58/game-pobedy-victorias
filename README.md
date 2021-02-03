@@ -1,4 +1,4 @@
-# ***Parcial N°2 Programacion de Computadores I***
+# ***Proyecto Final - POBEDY (Victoria o Muerte) - Programacion de Computadores I***
 > Siempre codifica como si la persona que finalmente mantendrá tu código fuera un psicópata violento que sabe dónde vives.
 	 -[Martin Golding](https://scholars.duke.edu/person/golding)
 
