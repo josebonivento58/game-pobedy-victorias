@@ -3,6 +3,8 @@ void loadGraphics(){
   loadMenu(); 
  }else if(window==1){
    loadGamePlay();
+ }else if(window==2){
+  loadConfig(); 
  }
   
   

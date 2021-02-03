@@ -4,7 +4,7 @@ void setup(){
  size(800,600);
  btn = new mButton[3];
  for(int i=0;i<3;i++){
-   
+   btn[i] = new mButton(i);
  }
  surface.setTitle("Pobedy - Victory or dead");
   
