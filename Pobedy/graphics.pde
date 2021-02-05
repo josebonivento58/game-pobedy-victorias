@@ -5,6 +5,8 @@ void loadGraphics(){
    loadGamePlay();
  }else if(window==2){
   loadConfig(); 
+ }else if(window==3){
+  authorsInfo(); 
  }
   
   

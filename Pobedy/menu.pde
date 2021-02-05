@@ -1,17 +1,20 @@
 void loadMenu(){
-  background(#FF2424);
+  loadLogo();
   menuButtons();
   
 }
+void loadLogo(){
+image(menup,0,0);
+}
 void menuButtons(){
- for(int i=0;i<3;i++){
+ for(int i=0;i<4;i++){
    btn[i].load(350,200+100*i);
  }
   
 }
 class mButton{
   PVector pos;
-  String btntxt[] = {"Jugar", "Config", "Salir"};
+  String btntxt[] = {"Jugar", "Config","Acerca", "Salir", "Volver"};
   int bid;
   mButton(int id){
     pos = new PVector();
@@ -29,6 +32,16 @@ class mButton{
    fill(0);
    text(btntxt[bid],pos.x+30,pos.y+20);
   }
+  void backplace(int x, int y,int id){
+    fill(#FFFFFF);
+   rect(x,y,100,30,50,50,50,50); 
+   fill(0);
+   text(btntxt[bid],x+30,y+20);
+   pos.x=x;
+   pos.y=y;
+   bid=id;
+   command();
+  }
   void command(){
    if(mouseInLeftC(pos.x,pos.y,pos.x+100,pos.y+30)){
      print(btntxt[bid]);
@@ -38,7 +51,11 @@ class mButton{
      }else if(bid==1){
        window=2;
      }else if(bid==2){
-      exit();
+      window=3;
+     }else if(bid==3){
+      exit(); 
+     }else if(bid==4){
+      window=0; 
      }
        
    }

@@ -6,6 +6,7 @@
 
 ### **Autor**
 ***Cristian de Jesus Chavez Choperena*** - ***2182190*** - ***Programador***.
+
 ***Josser Giovani de Luque Salcedo*** - ***2190246*** - ***Programador***.
 
 ### **Descripcion** 
