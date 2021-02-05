@@ -3,6 +3,7 @@ class Player{
   boolean left=false,right=false,up=false,down=false;
   int vel2d=5;
   int lives=5;
+  int size=50;
   float score=0.0;
   int status=0;
  Player(){

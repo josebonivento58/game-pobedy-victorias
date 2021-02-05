@@ -8,6 +8,7 @@ class Bullet{
  }
 
  void update(){
+
     pos.y = pos.y - cos(10/180*PI)*speed;
    ellipse(pos.x, pos.y, 10, 10);
    if (pos.x > 0 && pos.x < width && pos.y > 0 && pos.y < height) {

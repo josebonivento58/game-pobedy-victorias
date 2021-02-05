@@ -1,4 +1,7 @@
 void keyPressed(){
+  if(keyCode == 27){
+   window=0; 
+  }
   if(window !=0){
  if(player.status ==0){
   switch(keyCode){

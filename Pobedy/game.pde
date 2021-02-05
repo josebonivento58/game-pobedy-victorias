@@ -12,7 +12,9 @@ void loadGamePlay(){
   for (b = bullets.size()-1; b >= 0; b--) {
     Bullet bullet = bullets.get(b);
     bullet.update();
-  }
+}
+cen.EnemyPlace();
+cen.update();
 }
 void gamePaused(){
   
