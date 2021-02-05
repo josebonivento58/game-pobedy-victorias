@@ -13,9 +13,11 @@ void menuButtons(){
   
 }
 class mButton{
+  boolean canclick =true;
   PVector pos;
-  String btntxt[] = {"Jugar", "Config","Acerca", "Salir", "Volver"};
+  String btntxt[] = {"Jugar", "Config","Acerca", "Salir", "Volver","Pause","Play"};
   int bid;
+  int almacenada;
   mButton(int id){
     pos = new PVector();
     bid = id;
@@ -44,7 +46,7 @@ class mButton{
   }
   void command(){
    if(mouseInLeftC(pos.x,pos.y,pos.x+100,pos.y+30)){
-     print(btntxt[bid]);
+     
      if(bid==0){
       window=1;
       level = 1;
@@ -56,9 +58,28 @@ class mButton{
       exit(); 
      }else if(bid==4){
       window=0; 
-     }
+     }else if(bid==5 && canclick){
+       if(window!=4){
+         almacenada=window;
+         window=4;
+         canclick=false;
+         print(almacenada);
        
-   }
+         }
+       }else if(bid==6 && canclick){
+       if(window==4){
+         window=almacenada;
+         canclick=false;
+         }
+       }
+       
+
+     
+       
+   }if(mousePressed==false){
+         canclick=true;
+       }
+       
   }
   
 }

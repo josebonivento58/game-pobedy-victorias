@@ -6,7 +6,9 @@ void loadGraphics(){
  }else if(window==2){
   loadConfig(); 
  }else if(window==3){
-  authorsInfo(); 
+  authorsInfo();
+ }else if(window==4){
+  gamePaused(); 
  }
   
   

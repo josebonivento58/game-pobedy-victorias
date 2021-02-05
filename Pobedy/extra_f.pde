@@ -5,3 +5,13 @@ boolean mouseInLeftC(float x, float y, float dx, float dy){
   return false; 
  }
 }
+void mousePressed(){
+  
+  
+  
+}
+void mouseReleased(){
+  
+  
+  
+}
