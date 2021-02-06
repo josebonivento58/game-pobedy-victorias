@@ -1,5 +1,5 @@
 int window = 0,level=0, b;
-int enemy[] ={8,4};
+int enemy[] ={5,6};
 ArrayList<Bullet> bullets;
 mButton[] btn;
 Enemy[][] enm;
@@ -17,11 +17,11 @@ void setup(){
  cen = new callEnemy();
  enm = new Enemy[enemy[0]][enemy[1]];
  bullets = new ArrayList<Bullet>();
- for(int i=0;i<enemy[0];i++){
-  for(int j=0;j<enemy[1];j++){
-   enm[i][j] = new Enemy(50*(1+i),50*(1+j)); 
-  }
- }
+for(int i=0;i<enemy[0];i++){
+      for(int j=0;j<enemy[1];j++){
+       enm[i][j] = new Enemy(50*(1+i),50*(1+j)); 
+      }
+    }
  player = new Player();
  for(int i=0;i<7;i++){
    btn[i] = new mButton(i);

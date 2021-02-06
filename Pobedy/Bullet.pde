@@ -1,25 +1,36 @@
 class Bullet{
  PVector pos;
  int speed = 10;
- int tp;
- Bullet(int type){
-  pos= new PVector(player.pos2d.x+25,player.pos2d.y);
+ boolean tp;
+ Bullet(float x, float y,boolean type){
+   if(type){
+   x=x+25; 
+  }else{
+   speed=2; 
+  }
+  pos= new PVector(x,y);
+  
+  
  tp=type;
  }
 
  void update(){
-
-    pos.y = pos.y - cos(10/180*PI)*speed;
+  if(tp){
+    pos.y = pos.y - speed;
    ellipse(pos.x, pos.y, 10, 10);
+    }else if(!tp){
+      pos.y = pos.y + speed;
+   ellipse(pos.x, pos.y, 10, 10);
+    }
    if (pos.x > 0 && pos.x < width && pos.y > 0 && pos.y < height) {
      
     }
     else {
       bullets.remove(b);
     }
-   if(tp==1){
+   
      
-   }
+  
  }
   
 }

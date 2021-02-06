@@ -14,6 +14,7 @@ void loadGamePlay(){
     bullet.update();
 }
 cen.EnemyPlace();
+cen.disparar();
 cen.update();
 }
 void gamePaused(){

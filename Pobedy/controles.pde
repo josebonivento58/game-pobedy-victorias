@@ -26,7 +26,7 @@ void keyPressed(){
      player.right=true;
      break;
    case ' ':
-     bullets.add( new Bullet(1));
+     bullets.add( new Bullet(player.pos2d.x,player.pos2d.y,true));
   }
      if(keyCode == 'p'){
       window=4; 
