@@ -11,7 +11,7 @@ class Player{
  }
  void play(){
    if(level==1){
-      image(pl1,pos2d.x,pos2d.y,50,64.28);
+      image(pl[plsprite],pos2d.x,pos2d.y,50,64.28);
    
  }
  }

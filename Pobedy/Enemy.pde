@@ -1,6 +1,7 @@
 class Enemy{
   PVector pos;
   int size = 30;
+  int enemysprite = round(random(0,1));
   boolean alive = true;
   Enemy(int px,int py){
     pos = new PVector(px,py);
@@ -8,11 +9,11 @@ class Enemy{
   }
   void place(){
     if(alive){
-    rect(pos.x,pos.y,30,30); 
+    image(en[enemysprite],pos.x,pos.y,30,30);
     }
     }
     void shoot(float sr, float x, float y){
-      print(sr);
+      
       if(random(0,1) < sr ) {
             bullets.add(new Bullet(x,y,false));
         }
@@ -58,7 +59,7 @@ class callEnemy{
     }
     if(player.lives<=0){
      window=10; // Game Over
-    }if(player.score==45){
+    }if(player.score==30){
      enmspeed=0; 
       
     }
@@ -99,6 +100,8 @@ class callEnemy{
               bullets.remove(b);
               enm[i][j].alive = false;
               player.score +=1;
+              s[0].rewind();
+              s[0].play();
             }else if(!bullet.tp &&bullet.pos.y > player.pos2d.y-25 && bullet.pos.y<player.pos2d.y+25 && bullet.pos.x >player.pos2d.x-30 && bullet.pos.x <player.pos2d.x+30){
               bullets.remove(b);
               player.lives -=1;

@@ -10,6 +10,7 @@
 ***Josser Giovani de Luque Salcedo*** - ***2190246*** - ***Programador***.
 
 ### **Descripcion** 
+Version: 1.10.1
 Consiste en un batido de arcades mezclados con una historia en la que nuestro personaje principal debera sortear varios retos para llegar al jefe final y lograr así rescatar
 a sus amigos del malvado rector porras.
 
@@ -30,5 +31,8 @@ Espacio para disparar (en algunos niveles).
 
 ## **Capturas**
 
+![Menú Principal](https://i.imgur.com/vOkYUnm.png)
+![Player Selector](https://i.imgur.com/ZpRIhYW.png)
+![Ingame](https://i.imgur.com/6xRavXw.png)
 
 ## **Fin**

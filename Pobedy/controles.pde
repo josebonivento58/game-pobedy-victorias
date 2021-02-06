@@ -1,8 +1,6 @@
 void keyPressed(){
-  if(keyCode == 27){
-   window=0; 
-  }
-  if(window !=0){
+
+  if(window == 1){
  if(player.status ==0){
   switch(keyCode){
    case 'w':
@@ -27,13 +25,26 @@ void keyPressed(){
      break;
    case ' ':
      bullets.add( new Bullet(player.pos2d.x,player.pos2d.y,true));
+     s[1].rewind();
+     s[1].play();
+     break;
+   case 'p':
+   case 'P':
+     presume();
+     canpresume=false;
   }
-     if(keyCode == 'p'){
-      window=4; 
-     }
+
    
  }
- } 
+ }else if(window == 4){
+   switch(keyCode){
+    case 'P':
+    case 'p':
+     presume();
+     canpresume=false;      
+   }
+   
+ }
 }
 void keyReleased(){
     if(window !=0){
@@ -60,12 +71,14 @@ void keyReleased(){
    case RIGHT:
      player.right=false;
      break;
+   case 'p':
+   case 'P':
+     canpresume=true;
+     break;
 
     
   }
-     if(keyCode == 'p'){
-      window=4; 
-     }
+
    
  }
  }

@@ -1,5 +1,8 @@
 //En esta pagina se muestra la informacion de los autores
 void authorsInfo(){
+   if(s[10].isPlaying()){
+  s[10].pause(); 
+ }
   image(about,0,0);
   btn[4].backplace(500,500,4);
   String[] biblia = loadStrings("data/about.txt");

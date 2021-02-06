@@ -15,3 +15,11 @@ void mouseReleased(){
   
   
 }
+void presume(){
+ if(canpresume && window == 4){
+   window = 1;
+ }else if(canpresume && window ==1){
+  window = 4;
+ }
+  
+}

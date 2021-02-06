@@ -1,4 +1,5 @@
 void loadGamePlay(){
+  disableNoGameSounds();
   background(#24FFEB);
   text("Vidas:",550,50);
   text("Puntaje:   "+player.score,550,100);
@@ -13,6 +14,7 @@ void loadGamePlay(){
     Bullet bullet = bullets.get(b);
     bullet.update();
 }
+
 cen.EnemyPlace();
 cen.disparar();
 cen.update();
@@ -20,5 +22,12 @@ cen.update();
 void gamePaused(){
   
   btn[5].backplace(500,500,6);
+  
+}
+void disableNoGameSounds(){
+ if(s[10].isPlaying()){
+  s[10].pause(); 
+ }
+  
   
 }
