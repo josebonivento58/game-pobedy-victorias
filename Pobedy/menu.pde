@@ -54,7 +54,7 @@ class mButton{
   void visualPlace(){
     if(plsprite==bid){
       noFill();
-      rect(pos.x,pos.y,51,51);
+      rect(pos.x-1,pos.y-1,51,51);
     }
     image(imagedir,pos.x,pos.y,50,50);
 

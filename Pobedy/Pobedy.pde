@@ -1,10 +1,11 @@
   
 import ddf.minim.*;
 
-int window = 0,level=0, b,ss, plsprite=1;;
+int window = 0,level=0, b,ss, plsprite=1, frame;
 int enemy[] ={5,6};
 ArrayList<Bullet> bullets;
 PImage[] pl, en;
+spriteAnim anim;
 Minim minim;
 AudioPlayer[] s;
 mButton[] btn, pbtn;
@@ -26,5 +27,6 @@ void setup(){
 }
 
 void draw(){
-  loadGraphics();  
+  loadGraphics(); 
+
 }

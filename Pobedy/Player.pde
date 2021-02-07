@@ -1,7 +1,8 @@
 class Player{
   PVector pos2d;
-  boolean left=false,right=false,up=false,down=false;
+  boolean left=false,right=false,up=false,down=false, alive=true;
   int vel2d=5;
+  int w=0;
   int lives=5;
   int size=50;
   float score=0.0;
@@ -10,7 +11,7 @@ class Player{
    pos2d = new PVector(375,500);
  }
  void play(){
-   if(level==1){
+   if(level==1 && alive){
       image(pl[plsprite],pos2d.x,pos2d.y,50,64.28);
    
  }
@@ -35,7 +36,19 @@ class Player{
   }else if(down){
    movev(1); 
   }
- 
+     if(!alive){
+      anim.display(player.pos2d.x,player.pos2d.y);
+      
+      w=w+1;
+      if(w==100){
+       alive=true;
+       cen.reset();
+        pos2d.y=500;
+        pos2d.x=175;
+      }
+    }else{
+    w=0;
+    }
  }
   
 }

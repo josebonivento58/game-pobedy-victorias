@@ -1,5 +1,5 @@
 void prechargeGraphics(){
- pl = new PImage[2];
+ pl = new PImage[3];
  en = new PImage[2];
  menup = loadImage("data/menup.png");
  about = loadImage("data/about.png");
@@ -8,6 +8,7 @@ void prechargeGraphics(){
  pl[1] = loadImage("data/gameplay/pl2.png");
  en[0] = loadImage("data/gameplay/enemy1.png");
  en[1] = loadImage("data/gameplay/enemy2.png");
+ anim = new spriteAnim("data/gameplay/boom/boom", 12);
  prechargeButtons();
   
 }

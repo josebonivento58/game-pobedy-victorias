@@ -15,12 +15,12 @@ class Bullet{
  }
 
  void update(){
-  if(tp){
+  if(tp && player.alive){
     pos.y = pos.y - speed;
    ellipse(pos.x, pos.y, 10, 10);
-    }else if(!tp){
+    }else if(!tp && player.alive){
       pos.y = pos.y + speed;
-   ellipse(pos.x, pos.y, 10, 10);
+      rect(pos.x,pos.y,5,10);
     }
    if (pos.x > 0 && pos.x < width && pos.y > 0 && pos.y < height) {
      
@@ -28,6 +28,7 @@ class Bullet{
     else {
       bullets.remove(b);
     }
+
    
      
   

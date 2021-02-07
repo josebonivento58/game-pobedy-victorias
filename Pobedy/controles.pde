@@ -1,6 +1,6 @@
 void keyPressed(){
 
-  if(window == 1){
+  if(window == 1 && player.alive){
  if(player.status ==0){
   switch(keyCode){
    case 'w':
